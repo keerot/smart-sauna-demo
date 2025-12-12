@@ -1,7 +1,8 @@
-const API_BASE = "http://localhost:4000/api";
+const API_URL = import.meta.env.VITE_API_URL;
+
 
 export async function fetchSaunaState() {
-  const res = await fetch(`${API_BASE}/sauna`);
+  const res = await fetch(`${API_URL}/sauna`);
   if (!res.ok) {
     throw new Error("Failed to fetch sauna state");
   }
@@ -9,7 +10,7 @@ export async function fetchSaunaState() {
 }
 
 export async function sendCommand(type, payload) {
-  const res = await fetch(`${API_BASE}/sauna/command`, {
+  const res = await fetch(`${API_URL}/sauna/command`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"

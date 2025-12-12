@@ -9,6 +9,7 @@ const app = express();
 
 // Middlewaret
 app.use(cors());
+app.use(cors({ origin: process.env.CORS_ORIGIN }));
 app.use(express.json());
 
 // Reitit /api -polun alle

@@ -129,6 +129,53 @@ Provides a simple dashboard to view and control sauna state.
 
 ---
 
+---
+
+## Environment Variables
+
+### Frontend (.env)
+
+Create `.env` in the **frontend** folder:
+
+```
+VITE_API_URL=http://localhost:4000
+```
+
+For production (Vercel):
+
+```
+VITE_API_URL=https://your-backend-url.com
+```
+
+> Note: Vite exposes only variables that start with `VITE_`.
+
+Use in frontend code:
+
+```
+const API_URL = import.meta.env.VITE_API_URL;
+```
+
+### Backend (.env)
+
+Create `.env` in the **backend** folder:
+
+```
+PORT=4000
+CORS_ORIGIN=https://your-frontend-url.vercel.app
+```
+
+Use in backend code:
+
+```
+app.use(cors({ origin: process.env.CORS_ORIGIN }));
+```
+
+---
+
+
+
+
+
 ## Purpose
 
 This demo was created to showcase:
@@ -138,5 +185,17 @@ This demo was created to showcase:
 * Ability to work with backend + frontend + CI.
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
 
 

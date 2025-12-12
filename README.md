@@ -1,5 +1,16 @@
+
 # Smart Sauna Demo
 
+## Live Demo
+
+You can try the running demo here:
+
+* **Frontend:** [https://smart-sauna-demo.vercel.app](https://smart-sauna-demo.vercel.app)
+* **Backend API:** [https://smart-sauna-demo.onrender.com/api/sauna](https://smart-sauna-demo.onrender.com/api/sauna)
+
+(Demo backend may take a few seconds to wake on first request due to free-tier hosting.)
+
+---
 ## Overview
 
 Smart Sauna Demo is a modern fullstack proof-of-concept application designed to simulate a digital sauna experience. It demonstrates:
@@ -12,6 +23,7 @@ Smart Sauna Demo is a modern fullstack proof-of-concept application designed to 
 * Frontend dashboard built with React + Vite.
 
 ---
+
 
 ## Project Structure
 
